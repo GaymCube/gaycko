@@ -1,0 +1,7 @@
+[package]
+name = "gaycko"
+version = "0.1.0"
+authors = ["Mary <me@thog.eu>"]
+edition = "2018"
+
+[dependencies]

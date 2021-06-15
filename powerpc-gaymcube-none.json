@@ -1,0 +1,33 @@
+{
+  "arch": "powerpc",
+  "cpu": "750",
+  "data-layout": "E-m:e-p:32:32-i64:64-n32",
+  "dynamic-linking": false,
+  "env": "",
+  "executables": true,
+  "has-elf-tls": false,
+  "has-rpath": true,
+  "is-builtin": true,
+  "linker": "rust-lld",
+  "linker-flavor": "ld.lld",
+  "linker-is-gnu": true,
+  "llvm-target": "powerpc-unknown-eabi",
+  "max-atomic-width": 32,
+  "os": "none",
+  "panic-strategy": "abort",
+  "position-independent-executables": false,
+  "pre-link-args": {
+    "ld.lld": [
+      "--build-id=sha1",
+      "-Tlink.ld"
+    ]
+  },
+  "relro-level": "off",
+  "target-endian": "big",
+  "target-family": [
+    "unix"
+  ],
+  "target-mcount": "_mcount",
+  "target-pointer-width": "32",
+  "vendor": "mary"
+}
